@@ -1,0 +1,54 @@
+FIXME: HTML Introduction:-
+    . HTML stands for "Hyper Text Markup Langauge".
+    . HTML is used for "Creating Web Pages".
+    . HTML describe "Structure of a Web Page".
+    . HTML consists of "Series Elements".
+    . HTML elements tell the "Browser How to Display the Content".
+    . HTML elements label pieces of content such as "this is a heading", 
+      "this is a paragraph", "this is a link", etc.
+FIXME: Web Browser:-
+    . The purpose of a web browser (Chrome, Edge, Firefox, Safari) 
+      is to read HTML documents and display them correctly.
+    . A browser does not display the HTML tags,
+      but uses them to determine how to display the document:
+FIXME: HTML Page Structure:-
+    .Below is a visualization of an HTML page structure:
+      <html>
+        <head>
+            <title>Page title</title>
+        </head>
+        <body>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </body>
+      </html>
+FIXME: Note:-
+    .The content inside the <body> section will be displayed in a browser.
+      The content inside the <title> element will be shown in the
+      browser's title bar or in the page's tab.
+FIXME: HTML Basic Structure:-
+    . In this chapter we will show some basic HTML examples.
+    . Don't worry if we use tags you have not learned about yet.
+        1. The <!DOCTYPE> Declaration:-
+            . The <!DOCTYPE> declaration represents the document type, 
+               and helps browsers to display web pages correctly.
+            . It must only appear once, at the top of the page (before any HTML tags).
+            . The <!DOCTYPE> declaration is not case sensitive.
+            . The <!DOCTYPE> declaration for HTML5 is:
+        2. HTML Documents
+            . All HTML documents must start with a document type declaration: 
+                <!DOCTYPE html>.
+            . The HTML document itself begins with <html> and ends with </html>.
+            . The visible part of the HTML document is between <body> and </body>.
+         --- Example ---
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>My Page</title>
+                </head>
+                <body>
+                    <h1>My First Heading</h1>
+                    <p>My first paragraph.</p>
+                </body>
+            </html>
