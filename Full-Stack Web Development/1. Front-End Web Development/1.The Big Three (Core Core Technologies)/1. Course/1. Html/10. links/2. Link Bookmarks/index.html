@@ -1,0 +1,203 @@
+<!--
+TODO: Full Stack Web Development by AHMAR Developer
+TODO : 1. Front End Web Development
+TODO : 1. The Big Three (Core Technologies)
+TODO : 1. Course
+TODO : 1. HTML (Hyper Text Markup Language)
+* FIXME: 10. Links
+    * 2. Link Bookmark:-
+        . HTML links can be used to create bookmarks, 
+            so that readers can jump to specific parts of a web page.
+        . Bookmarks can be useful if a web page is very long.
+        . To create a bookmark - first create the bookmark, then add a link to it.
+        . When the link is clicked, the page will scroll down or up to 
+            the location with the bookmark.
+        . First, use the id attribute to create a bookmark:
+            <h2 id="C4">Chapter 4</h2>
+        . Then, add a link to the bookmark ("Jump to Chapter 4"), 
+            from within the same page:
+                <a href="#C4">Jump to Chapter 4</a>
+        . You can also add a link to a bookmark on another page.
+-->
+<!--Start-Coding-->
+
+<!--Type-->
+<!DOCTYPE html>
+
+<!--HTML-->
+<html lang="en">
+
+<!--Head-->
+    <head>
+    
+        <!--Meta-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" , maximum-scale=1.0, user-scalable=no>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <!--Favicon (HTML Icon)-->
+        <link rel="icon" type="images/png" href="Assets/Favicon/HTML.png">
+    
+        <!--Fonts icons Scripts-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+    
+        <!--Fonts icons Links-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+        <!-- Animate-on-scroll CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    
+        <!--Google fonts poppins-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+    
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <!-- Condiment font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Condiment&display=swap" rel="stylesheet">
+    
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+                integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!--Javascript Particles-->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+        <!-- Include Ionicons library -->
+        <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+    
+        <!-- Animate-on-scroll Javascript-- -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+        <!--Link Javascript (External)-->
+        <script defer src=""></script>
+    
+        <!--Link CSS (External)-->
+        <link rel="stylesheet" href="">
+    
+        <!--Title-->
+        <title>
+    
+                10.2. Link Bookmarks
+    
+        </title>
+
+    </head>
+
+    <!--Body-->
+    <body style="font-family: sans-serif; text-align: center;">
+    
+        <!-- Horizontal Line -->
+        <hr style="border-color: red;">
+    
+        <!--Link Bookmark (Heading)-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- Link Bookmark ---
+        </h1>
+    
+        <!--Chapter # 4 (Bookmark Link)-->
+        <a href="#C4">Jump to Chapter # 4</a>
+    
+        <!-- Line Break -->
+        <br><br><br>
+    
+        <!--Chapter # 10 (Bookmark Link)-->
+        <a href="#C10">Jump to Chapter # 10</a>
+    
+        <!-- Horizontal Line -->
+        <hr style="border-color: red;">
+    
+        <!--Chapters-->
+        <h2>Chapter 1</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 2</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 3</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2 id="C4">Chapter 4</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 5</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 6</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 7</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 8</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 9</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2 id="C10">Chapter 10</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 11</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 12</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 13</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 14</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 15</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 16</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 17</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 18</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 19</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 20</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 21</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 22</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <h2>Chapter 23</h2>
+        <p>This chapter explains ba bla bla</p>
+    
+        <!-- Horizontal Line -->
+        <hr style="border-color: red;">
+    
+    </body>
+
+</html>

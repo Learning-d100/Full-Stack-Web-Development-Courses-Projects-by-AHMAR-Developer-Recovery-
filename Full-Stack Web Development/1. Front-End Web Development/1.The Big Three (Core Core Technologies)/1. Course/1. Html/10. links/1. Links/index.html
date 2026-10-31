@@ -1,0 +1,326 @@
+<!--
+TODO: Full Stack Web Development by AHMAR Developer
+TODO : 1. Front End Web Development
+TODO : 1. The Big Three (Core Technologies)
+TODO : 1. Course
+TODO : 1. HTML (Hyper Text Markup Language)
+* FIXME: 10. Links
+    * 1. Link
+        . HTML links are hyperlinks.
+        . You can click on a link and jump to another document.
+        . Links are found in nearly all web pages. Links allow users to click 
+            their way from page to page.
+        . When you move the mouse over a link, the mouse arrow will turn into 
+            a little hand.
+        ? Note: 
+            ? A link does not have to be text. 
+            ? A link can be an image or any other HTML element!
+        * HTML Links - Syntax
+            . The HTML <a> tag defines a hyperlink. It has the following syntax:
+                * <a href="url">link text</a>
+            . The most important attribute of the <a> element is the href 
+                attribute, which indicates the link's destination.    
+            . The link text is the part that will be visible to the reader.
+            . Clicking on the link text, will send the reader to the specified 
+                URL address.
+            . By default, links will appear as follows in all browsers:
+                . An unvisited link is underlined and blue
+                . A visited link is underlined and purple
+                . An active link is underlined and red
+            ? Note:-
+                ? Links can of course be styled with CSS, to get another look!
+        * HTML Links - The target Attribute
+            . By default, the linked page will be displayed in the 
+                current browser window. 
+            . To change this, you must specify another target for the link.
+            . The target attribute specifies where to open the linked document.
+            . The target attribute can have one of the following values:
+            . _self - Default. Opens the document in the same window/tab 
+                as it was clicked
+            . _blank - Opens the document in a new window or tab
+            . _parent - Opens the document in the parent frame
+            . _top - Opens the document in the full body of the window
+        * Absolute URLs
+            . An absolute URL (a full web address) in the href attribute.
+        * Relative URLs
+            . A local link (a link to a page within the same website) is s
+                pecified with a relative URL (without the "https://www" part):
+        * HTML Links - Use an Image as a Link
+            . To use an image as a link, just put the <img> tag inside the <a> tag:
+        * Link to an Email Address
+            . Use mailto: inside the href attribute to create a link that
+                opens the user's email program (to let them send a new email):
+        * Button as a Link
+            . To use an HTML button as a link, you have to add some JavaScript code.
+            . JavaScript allows you to specify what happens at certain events, 
+                such as a click of a button:
+            ? Tip:-
+                ? Learn more about JavaScript in our JavaScript Tutorial.
+        * Link Titles
+            . The title attribute specifies extra information about an element.
+            . The information is most often shown as a tooltip text when 
+                the mouse moves over the element.
+-->
+<!--Start-Coding-->
+
+<!--Type-->
+<!DOCTYPE html>
+
+<!--HTML-->
+<html lang="en">
+
+<!--Head-->
+    <head>
+    
+        <!--Meta-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" , maximum-scale=1.0, user-scalable=no>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <!--Favicon (HTML Icon)-->
+        <link rel="icon" type="images/png" href="Assets/Favicon/HTML.png">
+    
+        <!--Fonts icons Scripts-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+    
+        <!--Fonts icons Links-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+        <!-- Animate-on-scroll CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    
+        <!--Google fonts poppins-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+    
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <!-- Condiment font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Condiment&display=swap" rel="stylesheet">
+    
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+                integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!--Javascript Particles-->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+        <!-- Include Ionicons library -->
+        <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+    
+        <!-- Animate-on-scroll Javascript-- -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+        <!--Link Javascript (External)-->
+        <script defer src=""></script>
+    
+        <!--Link CSS (External)-->
+        <link rel="stylesheet" href="">
+    
+        <!--Title-->
+        <title>
+    
+                10.1. Links
+    
+        </title>
+
+    </head>
+
+    <!--Body-->
+    <body style="font-family: sans-serif; text-align: center;">
+        
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--HTMl Hyper Link Heading-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- Hyper Link ---
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Hyper link-->
+        <a href="https://www.w3schools.com">Visit W3Scools Website!</a>
+        
+        <!-- Horizontal Line -->
+        <hr style="border-color: red;">
+
+        <!--The Target Attribute Link (Blank) Heading-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- The Target Attribute link (Blank) ---
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Target Attribute Link (Blank)-->
+        <a href="https://www.w3schools.com" target="_blank">
+            Visit W3Schools Website!
+        </a>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--The Target Attribute Link (Self) Heading-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- The Target Attribute link (Self) ---
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Target Attribute Link (Self)-->
+        <a href="https://www.w3schools.com" target="_self">
+            Visit W3Schools Website!
+        </a>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--The Target Attribute Link (Parent) Heading-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- The Target Attribute link (Parent) ---
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Target Attribute Link (Parent)-->
+        <a href="https://www.w3schools.com" target="_parent">
+            Visit W3Schools Website!
+        </a>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--The Target Attribute Link (Top) Heading-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- The Target Attribute link (Top) ---
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Target Attribute Link (Top)-->
+        <a href="https://www.w3schools.com" target="_top">
+            Visit W3Schools Website!
+        </a>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--Absolute Url link Heading-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- Absolute Url Link ---
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Absolute Url Link-->
+        <a href="htpps://www.w3schools.com" target="_blank">
+            Visit W3Schools Website!
+        </a>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--Relative Url link Heading-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- Relative Url Link ---
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Relative Url Link-->
+        <a href="Assets/Favicon/HTML.png">HTMl Image</a>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--Image as a Link Heading-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- Image as a Link ---
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Image as a Link-->
+        <a href="https://www.w3schools.com/html/">
+            <img style="height: 50px; width: 50px;" src="Assets/Favicon/HTML.png" alt="HTML Course">
+        </a>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--Link to an Email Address (Heading)-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- Link to an Email Address ---
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Link to an Email Address-->
+        <a href="mailto:someone@example.com">Send email</a>
+        
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--Button as a Link (Heading)-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- Button as a Link ---
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Button as a Link-->
+        <button style="padding: 10px; font-size: 20px; background-color: rgb(168, 241, 241);">
+            <a href="https://www.w3schools.com/"></a>
+            Button as a Link
+        </button>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--Link Title (Heading)-->
+        <h1 style="text-decoration: underline red; color: blue;">
+            --- Link Title ----
+        </h1>
+
+        <!--Down Arrow-->
+        <h1 style="color: red;">↓</h1>
+
+        <!--Link Title-->
+        <a href="https://www.w3schools.com/" title="Go to Web3Schools HTMl Section">
+            Visit W3Schools Website!
+        </a>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+    </body>
+
+</html>
