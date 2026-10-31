@@ -1,0 +1,881 @@
+<!--
+TODO: Full Stack Web Development by AHMAR Developer
+TODO : 1. Front End Web Development
+TODO : 1. The Big Three (Core Technologies)
+TODO : 1. Course
+TODO : 1. HTML (Hyper Text Markup Language)
+* FIXME: 24. Form
+    * 1. Form Attributes:-
+        * 1. Accept-Charset
+            . The 'accept-charset' attribute specifies the character encodings 
+                that are to be used for the form submission.
+            . Browser Support
+                . Chrome: Supported
+                . Edge: Supported
+                . Firefox: Supported
+                . Internet Explorer: Supported
+                . Opera: Supported
+                . Safari: Supported
+            . Syntax
+                . <form accept-charset="value">
+            . Attribute Values
+                . The 'accept-charset' attribute can have the following values:
+                    . A space-separated list of character encodings.
+                . Common values:
+                    . UTF-8: Unicode Transformation Format - 8-bit
+                    . ISO-8859-1: Western European (Latin-1)
+                    . In theory, any character encoding can be used, 
+                        but no browser understands all of them. 
+                    . The more widely a character encoding is used, 
+                        the better the chance that a browser will understand it.
+        * 2. Action
+            . The 'action' attribute specifies where to send the form data 
+                when a form is submitted.
+            . The action attribute defines the action to be performed when 
+                the form is submitted.
+            . Usually, the form data is sent to a file on the server when 
+                the user clicks on the submit button.
+            . Browser Support
+                . Chrome: Supported
+                . Edge: Supported
+                . Firefox: Supported
+                . Internet Explorer: Supported
+                . Opera: Supported
+                . Safari: Supported
+            . Syntax
+                . <form action="URL">
+            . Attribute Values
+                . The 'action' attribute can have the following values:
+                    . A URL (Uniform Resource Locator) that specifies where 
+                        to send the form data.
+                    . If the 'action' attribute is omitted, 
+                        the form data will be sent to the same page that 
+                        the form is on.
+            ? Tip: If the action attribute is omitted, 
+                ? the action is set to the current page.
+        * 3. Autocomplete
+            . The 'autocomplete' attribute specifies whether a form or input 
+                field should have autocomplete enabled or disabled.
+            . When autocomplete is enabled, the browser can suggest and 
+                automatically fill in previously entered values for form fields.
+            . Browser Support
+                . Chrome: Supported
+                . Edge: Supported
+                . Firefox: Supported
+                . Internet Explorer: Supported
+                . Opera: Supported
+                . Safari: Supported
+            . Syntax
+                . <form autocomplete="on|off">
+            . Attribute Values
+                . on: Enables autocomplete for the form or input field.
+                . off: Disables autocomplete for the form or input field.
+        * 4. Enctype
+            . The 'enctype' attribute specifies how the form data should be 
+                encoded when it is sent to the server.
+            . Browser Support
+                . Chrome: Supported
+                . Edge: Supported
+                . Firefox: Supported
+                . Internet Explorer: Supported
+                . Opera: Supported
+                . Safari: Supported
+            . Syntax
+                . <form enctype="value">
+            . Attribute Values
+                . application/x-www-form-urlencoded (default): 
+                    . Data is encoded as key-value pairs, 
+                        with special characters replaced by percent-encoding.
+                . multipart/form-data: 
+                    . Used when the form includes file uploads. 
+                    . Data is sent in multiple parts, allowing for binary data.
+                . text/plain: 
+                    . Data is sent as plain text without any encoding. 
+                    . Not commonly used and may not be supported by all browsers.
+            ? Note: The enctype attribute can be used only if method="post".
+        * 5. Method
+            . The 'method' attribute specifies the HTTP method to be used 
+                when submitting the form data.
+            . Browser Support
+                . Chrome: Supported
+                . Edge: Supported
+                . Firefox: Supported
+                . Internet Explorer: Supported
+                . Opera: Supported
+                . Safari: Supported
+            . Syntax
+                . <form method="get|post">
+            . Attribute Values
+                . get: 
+                    . Appends the form data to the URL in name/value pairs. 
+                    . Suitable for non-sensitive data and bookmarking.
+                . post: 
+                    . Sends the form data in the body of the HTTP request. 
+                    . Suitable for sensitive data and larger amounts of data.
+        * 6. Name
+            . The 'name' attribute specifies the name of the form or input field.
+            . Browser Support
+                . Chrome: Supported
+                . Edge: Supported
+                . Firefox: Supported
+                . Internet Explorer: Supported
+                . Opera: Supported
+                . Safari: Supported
+            . Syntax
+                . <form name="value">
+            . Attribute Values
+                . A string that represents the name of the form or input field.
+        * 7. Target
+            . The 'target' attribute specifies where to display the response 
+                after submitting the form.
+            . Browser Support
+                . Chrome: Supported
+                . Edge: Supported
+                . Firefox: Supported
+                . Internet Explorer: Supported
+                . Opera: Supported
+                . Safari: Supported
+            . Syntax
+                . <form target="value">
+            . Attribute Values
+                . _self: Opens the response in the same frame or window (default).
+                . _blank: Opens the response in a new window or tab.
+                . _parent: Opens the response in the parent frame.
+                . _top: Opens the response in the full body of the window.
+        * 8. Novalidate
+            . The 'novalidate' attribute is a boolean attribute that can be 
+                added to a form element to disable the browser's built-in 
+                form validation.
+            . Browser Support
+                . Chrome: Supported
+                . Edge: Supported
+                . Firefox: Supported
+                . Internet Explorer: Supported
+                . Opera: Supported
+                . Safari: Supported
+            . Syntax
+                . <form novalidate>
+        * 9. Rel
+            . The 'rel' attribute specifies the relationship between the current 
+                document and the linked document or resource.
+            . Browser Support
+                . Chrome: Supported
+                . Edge: Supported
+                . Firefox: Supported
+                . Internet Explorer: Supported
+                . Opera: Supported
+                . Safari: Supported
+            . Syntax
+                . <form rel="value">
+            . Attribute Values
+                . A space-separated list of link types that define the relationship 
+                    between the current document and the linked document or resource.
+-->
+<!--Start-Coding-->
+
+<!--Type-->
+<!DOCTYPE html>
+
+<!--HTML-->
+<html lang="en">
+
+<!--Head-->
+    <head>
+    
+        <!--Meta - Define the character set used:-->
+        <meta charset="UTF-8">
+
+        <!--Meta - Define keywords for search engines:-->
+        <meta name="keywords" content="HTML">
+
+        <!--Meta - Define a description of your web page:-->
+        <meta name="description" content="HTML Course : 24.1. Form Attributes">
+
+        <!--Meta - Define the author of a page:-->
+        <meta name="author" content="Ahmar Developer">
+
+        <!--Meta - Refresh document:-->
+        <meta http-equiv="refresh" content="">
+        
+        <!--Meta - Setting viewport to make your website look good on all devices:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Meta - Forces Internet Explorer to use its newest engine-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <!--Favicon (HTML Icon)-->
+        <link rel="icon" type="images/png" href="Assets/Favicon/HTML.png">
+    
+        <!--Fonts icons Scripts-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" 
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/dd8c49730d.js" 
+        crossorigin="anonymous"></script>
+    
+        <!--Fonts icons Links-->
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+        <!-- Animate-on-scroll CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    
+        <!--Google fonts poppins-->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" 
+        href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+        <lin rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <!-- Condiment font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Condiment&display=swap" 
+        rel="stylesheet">
+    
+        <!--Javascript other link-->
+        <script 
+        src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script 
+        src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!--Javascript Particles-->
+        <script
+        src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+        <!-- Include Ionicons library -->
+        <script 
+        src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+    
+        <!-- Animate-on-scroll Javascript-- -->
+        <script 
+        src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+        <!--Link Javascript (External)-->
+        <script 
+        defer 
+        src=""></script>
+    
+        <!--Link CSS (External)-->
+        <link 
+        rel="stylesheet" 
+        href="">
+    
+        <!--Title-->
+        <title>
+            
+            24.1. Form Attributes
+    
+        </title>
+
+        <!--Inline CSS (Cascading Style Sheet)-->
+        <style>
+
+            /* Main Heading Styling */
+            h1 {
+
+                text-align: center;
+                color: #333;
+                font-family: sans-serif;
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                text-decoration: underline #b8c0c1;
+
+            }
+
+            /* Lecture Heading Styling */
+            h2 {
+
+                text-align: center;
+                color: #555;
+                font-family: sans-serif;
+                font-size: 2em;
+                margin-bottom: 15px;
+
+            }
+
+            /* Down Arrow icon Styling */
+            .fas.fa-arrow-down {
+
+                display: block;
+                margin: 0 auto;
+                font-size: 2em;
+                color: #007bff;
+                animation: bounce 1s infinite;
+
+            }
+
+            /* Keyframes for bounce animation */
+            @keyframes bounce {
+
+                /* 0%, 20%, 50%, 80%, 100% Styling */
+                0%, 20%, 50%, 80%, 100% {
+
+                    transform: translateY(0);
+
+                }
+
+                /* 40% Styling */
+                40% {
+
+                    transform: translateY(-20px);
+
+                }
+
+                /* 60% Styling */
+                60% {
+
+                    transform: translateY(-10px);
+
+                }
+
+            }
+
+            /* Form Styling */
+            form {
+
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+                font-family: sans-serif; 
+                box-shadow: -1px -1px 3px 1px rgba(0, 0, 0, 0.1);
+
+                /*Hover Effect*/
+                &:hover {
+
+                    box-shadow: -1px -1px 3px 4px rgba(0, 0, 0, 0.1);
+
+                }
+
+            }
+
+            /* Label Styling */
+            label {
+
+                margin-bottom: 5px;
+                font-weight: bold;
+                font-size: 20px;
+                color: #333;
+                font-size: 20px;
+
+            }
+
+            input, label {
+
+                padding-left: 50px;
+
+            }
+
+            /* Input Styling */
+            input[type="text"], input[type="email"] {
+
+                width: 50%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-left: 20px;
+
+                /* Focus Effect */
+                &:focus {
+
+                    outline: none;
+                    box-shadow: 0 0 5px #81c34f;
+                    border-color: #81c34f;
+                    color: #001eff;
+                    transform: scale(1.10);
+
+                }   
+
+                /* Placeholder Styling */
+                &::placeholder {
+
+                    color: #999;
+                    font-style: italic;
+
+                }
+
+                /*Hover Effect*/
+                &:hover {
+
+                    border-color: #81c34f;
+                    box-shadow: 0 0 5px #81c34f;
+
+                }
+
+            }
+
+            /* Submit Button Styling */
+            input[type="submit"] {
+
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 20px;
+                width: 90%;
+                margin-left: 20px;
+
+                /* Hover Effect */
+                &:hover {
+
+                    background-color: #6eb863;
+                    transform: scale(0.90);
+
+                }
+
+                /* Focus Effect */
+                &:focus {
+
+                    outline: 5;
+                    box-shadow: 0 0 30px #81c34f;
+                    background-color: #81c34f;
+                    transform: scale(1.05);
+
+                }
+
+            }   
+
+        </style>
+
+    </head>
+
+    <!--Body-->
+    <body>
+    
+        <!-- Horizontal Line -->
+        <hr>
+    
+        <!--24.1. Form Attributes (Heading)-->
+        <h1>----- 24.1. Form Attributes -----</h1>
+    
+        <!--Horizontal Line-->
+        <hr>
+
+        <!--1. Accept-Charset (Heading)-->
+        <h2>1. Accept-Charset</h2>
+
+        <!--Down Arrow (Icon)-->
+        <i class="fas fa-arrow-down"></i>
+
+        <!--Form Heading-->
+        <h2>Form</h2>
+
+        <!--Form-->
+        <form accept-charset="UTF-8">
+
+            <!--Form Content-->
+
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!--Line Break-->
+        <br>
+
+        <!--Horizontal Line-->
+        <hr>
+
+        <!--2. Action (Heading)-->
+        <h2>2. Action</h2>
+
+        <!--Down Arrow (Icon)-->
+        <i class="fas fa-arrow-down"></i>
+
+        <!--Form Heading-->
+        <h2>Form</h2>
+
+        <!--Form-->
+        <form action="Assets/Image/screen-shot-2017-11-16-at-3.50.20-pm-1.png">
+
+            <!--Form Content-->
+
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!--Line Break-->
+        <br>
+
+        <!--Horizontal Line-->
+        <hr>
+
+        <!--3. AutoComplete (Heading)-->
+        <h2>3. AutoComplete</h2>
+
+        <!--Down Arrow (Icon)-->
+        <i class="fas fa-arrow-down"></i>
+
+        <!--Form Heading-->
+        <h2>Form</h2>
+
+        <!--Form-->
+        <form action="Assets/Image/screen-shot-2017-11-16-at-3.50.20-pm-1.png" 
+        autocomplete="on">
+
+            <!--Form Content-->
+
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!--Line Break-->
+        <br>
+
+        <!--Horizontal Line-->
+        <hr>
+
+        <!--4. Enctype (Heading)-->
+        <h2>4. Enctype</h2>
+
+        <!--Down Arrow (Icon)-->
+        <i class="fas fa-arrow-down"></i>
+
+        <!--Form Heading-->
+        <h2>Form</h2>
+
+        <!--Form-->
+        <form action="Assets/Image/screen-shot-2017-11-16-at-3.50.20-pm-1.png" 
+        enctype="multipart/form-data" method="post">
+
+            <!--Form Content-->
+
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!--Line Break-->
+        <br>
+
+        <!--Horizontal Line-->
+        <hr>
+
+        <!--5. Method 'Post' (Heading)-->
+        <h2>5. Method 'Post'</h2>
+
+        <!--Down Arrow (Icon)-->
+        <i class="fas fa-arrow-down"></i>
+
+        <!--Form Heading-->
+        <h2>Form</h2>
+
+        <!--Form-->
+        <form action="Assets/Image/screen-shot-2017-11-16-at-3.50.20-pm-1.png" 
+        method="post">
+
+            <!--Form Content-->
+
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!--Line Break-->
+        <br>
+
+        <!--Horizontal Line-->
+        <hr>
+
+        <!--5. Method 'Get' (Heading)-->
+        <h2>5. Method 'Get'</h2>
+
+        <!--Down Arrow (Icon)-->
+        <i class="fas fa-arrow-down"></i>
+
+        <!--Form Heading-->
+        <h2>Form</h2>
+
+        <!--Form-->
+        <form action="Assets/Image/screen-shot-2017-11-16-at-3.50.20-pm-1.png" 
+        method="get">
+
+            <!--Form Content-->
+
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!--Line Break-->
+        <br>
+
+        <!--Horizontal Line-->
+        <hr>
+
+        <!--6. Name (Heading)-->
+        <h2>6. Name</h2>
+
+        <!--Down Arrow (Icon)-->
+        <i class="fas fa-arrow-down"></i>
+
+        <!--Form Heading-->
+        <h2>Form</h2>
+
+        <!--Form-->
+        <form action="Assets/Image/screen-shot-2017-11-16-at-3.50.20-pm-1.png" 
+        method="get" name="myForm">
+
+            <!--Form Content-->
+
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!--Line Break-->
+        <br>
+
+        <!--Horizontal Line-->
+        <hr>
+
+        <!--7. Target (Heading)-->
+        <h2>7. Target</h2>
+
+        <!--Down Arrow (Icon)-->
+        <i class="fas fa-arrow-down"></i>
+
+        <!--Form Heading-->
+        <h2>Form</h2>
+
+        <!--Form-->
+        <form action="Assets/Image/screen-shot-2017-11-16-at-3.50.20-pm-1.png" 
+        method="get" name="myForm" target="_blank">
+
+            <!--Form Content-->
+
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!--Line Break-->
+        <br>
+
+        <!--Horizontal Line-->
+        <hr>
+
+        <!--8. Novalidate (Heading)-->
+        <h2>8. Novalidate</h2>
+
+        <!--Down Arrow (Icon)-->
+        <i class="fas fa-arrow-down"></i>
+
+        <!--Form Heading-->
+        <h2>Form</h2>
+
+        <!--Form-->
+        <form action="Assets/Image/screen-shot-2017-11-16-at-3.50.20-pm-1.png" 
+        method="get" name="myForm" target="_blank" novalidate>
+
+            <!--Form Content-->
+
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!--Line Break-->
+        <br>
+
+        <!--Horizontal Line-->
+        <hr>
+
+        <!--9. Rel (Heading)-->
+        <h2>9. Rel</h2>
+
+        <!--Down Arrow (Icon)-->
+        <i class="fas fa-arrow-down"></i>
+
+        <!--Form Heading-->
+        <h2>Form</h2>
+
+        <!--Form-->
+        <form action="Assets/Image/screen-shot-2017-11-16-at-3.50.20-pm-1.png" 
+        method="get" name="myForm" target="_blank" novalidate rel="noopener noreferrer">
+
+            <!--Form Content-->
+
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <!--Line Break-->
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!--Line Break-->
+        <br>
+
+        <!--Horizontal Line-->
+        <hr>
+    
+    </body>
+
+</html>

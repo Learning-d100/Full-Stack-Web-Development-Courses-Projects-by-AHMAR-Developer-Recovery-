@@ -1,0 +1,242 @@
+<!--
+TODO: Full Stack Web Development by AHMAR Developer
+TODO : 1. Front End Web Development
+TODO : 1. The Big Three (Core Technologies)
+TODO : 1. Course
+TODO : 1. HTML (Hyper Text Markup Language)
+* FIXME: 21. Computer Code
+    . HTML contains several elements for defining user input and computer code.
+    * <kbd> For Keyboard Input
+        . The HTML <kbd> element is used to define keyboard input. 
+        . The content inside is displayed in the browser's default monospace font.
+    * <samp> For Program Output
+        . The HTML <samp> element is used to define sample output from a 
+            computer program. The content inside is displayed in the 
+            browser's default monospace font.
+    * <code> For Computer Code
+        . The HTML <code> element  is used to define a piece of computer code. 
+        . The content inside is displayed in the browser's default monospace font.
+    * Preserve Line-Breaks
+        . Notice that the <code> element does NOT preserve extra whitespace 
+            and line-breaks.
+        . To preserve extra whitespace and line-breaks, you can put the 
+            <code> element inside a <pre> element:
+    * <var> For Variables
+        . The HTML <var> element  is used to define a variable in 
+            programming or in a mathematical expression. 
+        . The content inside is typically displayed in italic.
+-->
+<!--Start-Coding-->
+
+<!--Type-->
+<!DOCTYPE html>
+
+<!--HTML-->
+<html lang="en">
+
+<!--Head-->
+    <head>
+    
+        <!--Meta - Define the character set used:-->
+        <meta charset="UTF-8">
+
+        <!--Meta - Define keywords for search engines:-->
+        <meta name="keywords" content="HTML">
+
+        <!--Meta - Define a description of your web page:-->
+        <meta name="description" content="HTML Course - Computer Code">
+
+        <!--Meta - Define the author of a page:-->
+        <meta name="author" content="Ahmar Developer">
+
+        <!--Meta - Refresh document:-->
+        <meta http-equiv="refresh" content="">
+        
+        <!--Meta - Setting viewport to make your website look good on all devices:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Meta - Forces Internet Explorer to use its newest engine-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <!--Favicon (HTML Icon)-->
+        <link rel="icon" type="images/png" href="Assets/Favicon/HTML.png">
+    
+        <!--Fonts icons Scripts-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+    
+        <!--Fonts icons Links-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+        <!-- Animate-on-scroll CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    
+        <!--Google fonts poppins-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+    
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <!-- Condiment font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Condiment&display=swap" rel="stylesheet">
+    
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+                integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!--Javascript Particles-->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+        <!-- Include Ionicons library -->
+        <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+    
+        <!-- Animate-on-scroll Javascript-- -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+        <!--Link Javascript (External)-->
+        <script defer src=""></script>
+    
+        <!--Link CSS (External)-->
+        <link rel="stylesheet" href="">
+    
+        <!--Title-->
+        <title>
+    
+                21. Computer Code
+    
+        </title>
+
+    </head>
+
+    <!--Body-->
+    <body style="text-align: center;">
+    
+        <!-- Horizontal Line -->
+        <hr style="border-color: red;">
+    
+        <!--Computer Code Heading-->
+        <h1 style="text-decoration: underline red; color: blue;">
+
+            ----- Computer Code -----
+
+        </h1>
+    
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--1. <kbd> For Keyboard Input (Heading)-->
+        <h2 style="text-decoration: underline blue; color: red;">
+
+            1. < kbd > For Keyboard Input
+
+        </h2>
+
+        <!--Down Arrow-->
+        <h1 style="color: blue;">↓</h1>
+
+        <!--<kbd> For Keyboard Input-->
+        <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--2. <samp> For Program Output (Heading)-->
+        <h2 style="text-decoration: underline blue; color: red;">
+
+            2. < samp > For Program Output
+
+        </h2>
+
+        <!--Down Arrow-->
+        <h1 style="color: blue;">↓</h1>
+
+        <!--<samp> For Program Output-->
+        <p>Message from my computer:</p>
+        <p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--3. <code> For Computer Code (Heading)-->
+        <h2 style="text-decoration: underline blue; color: red;">
+
+            3. < code > For Computer Code
+
+        </h2>
+
+        <!--Down Arrow-->
+        <h1 style="color: blue;">↓</h1>
+
+        <!--<code> For Computer Code-->
+        <code>
+            x = 5;
+            y = 6;
+            z = x + y;
+        </code>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--4. Preserve Line-Breaks (Heading)-->
+        <h2 style="text-decoration: underline blue; color: red;">
+
+            4. Preserve Line-Breaks
+
+        </h2>
+
+        <!--Down Arrow-->
+        <h1 style="color: blue;">↓</h1>
+
+        <!--Preserve Line-Breaks-->
+<pre>
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+</pre>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+
+        <!--5. <var> For Variables (Heading)-->
+        <h2 style="text-decoration: underline blue; color: red;">
+
+            5. < var > For Variables
+        </h2>
+
+        <!--Down Arrow-->
+        <h1 style="color: blue;">↓</h1>
+
+        <!--<var> For Variables-->
+        <p>
+
+            The area of a triangle is: 1/2 x 
+            <var>b</var> x <var>h</var>, where <var>b</var> is the base, and 
+            <var>h</var> is the vertical height.
+
+        </p>
+
+        <!--Horizontal Line-->
+        <hr style="border-color: red;">
+    
+    </body>
+
+</html>

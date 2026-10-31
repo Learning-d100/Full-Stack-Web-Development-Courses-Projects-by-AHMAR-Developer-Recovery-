@@ -1,0 +1,174 @@
+<!--
+TODO: Full Stack Web Development by AHMAR Developer
+TODO : 1. Front End Web Development
+TODO : 1. The Big Three (Core Technologies)
+TODO : 1. Course
+TODO : 1. HTML (Hyper Text Markup Language)
+* FIXME: 22. Semantics
+    * 9. Section Element
+        . The <section> element defines a section in a document.
+        . According to W3C's HTML documentation: "A section is a
+            thematic grouping of content, typically with a heading."
+        . Examples of where a <section> element can be used:
+
+Chapters
+Introduction
+News items
+Contact information
+A web page could normally be split into sections for introduction, 
+content, and contact information.
+-->
+<!--Start-Coding-->
+
+<!--Type-->
+<!DOCTYPE html>
+
+<!--HTML-->
+<html lang="en">
+
+<!--Head-->
+    <head>
+    
+        <!--Meta - Define the character set used:-->
+        <meta charset="UTF-8">
+
+        <!--Meta - Define keywords for search engines:-->
+        <meta name="keywords" content="HTML">
+
+        <!--Meta - Define a description of your web page:-->
+        <meta name="description" content="HTML Course : 22.1 - '< Article >' Element 
+        (Semantic)">
+
+        <!--Meta - Define the author of a page:-->
+        <meta name="author" content="Ahmar Developer">
+
+        <!--Meta - Refresh document:-->
+        <meta http-equiv="refresh" content="">
+        
+        <!--Meta - Setting viewport to make your website look good on all devices:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Meta - Forces Internet Explorer to use its newest engine-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <!--Favicon (HTML Icon)-->
+        <link rel="icon" type="images/png" href="Assets/Favicon/HTML.png">
+    
+        <!--Fonts icons Scripts-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" 
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/dd8c49730d.js" 
+        crossorigin="anonymous"></script>
+    
+        <!--Fonts icons Links-->
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+        <!-- Animate-on-scroll CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    
+        <!--Google fonts poppins-->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" 
+        href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+        <lin rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <!-- Condiment font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Condiment&display=swap" 
+        rel="stylesheet">
+    
+        <!--Javascript other link-->
+        <script 
+        src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script 
+        src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!--Javascript Particles-->
+        <script
+        src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+        <!-- Include Ionicons library -->
+        <script 
+        src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+    
+        <!-- Animate-on-scroll Javascript-- -->
+        <script 
+        src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+        <!--Link Javascript (External)-->
+        <script 
+        defer 
+        src=""></script>
+    
+        <!--Link CSS (External)-->
+        <link 
+        rel="stylesheet" 
+        href="">
+    
+        <!--Title-->
+        <title>
+            
+            22.9 - '< Section >' Element (Semantic)
+    
+        </title>
+
+        <!--Inline CSS (Cascading Style Sheet)-->
+        <style>
+        
+        
+
+        </style>
+
+    </head>
+
+    <!--Body-->
+    <body>
+    
+        <!-- Horizontal Line -->
+        <hr>
+    
+        <section>
+            <h1>WWF</h1>
+            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+                conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was
+                founded in 1961.</p>
+        </section>
+    
+        <section>
+            <h1>WWF's Panda symbol</h1>
+            <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi
+                Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of
+                WWF.</p>
+        </section>
+    
+        <!--Horizontal Line-->
+        <hr>
+    
+    </body>
+
+</html>
